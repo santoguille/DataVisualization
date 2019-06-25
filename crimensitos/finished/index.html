@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="/assets/Chart.bundle.js"></script>
+    <script src="/assets/mapbox-gl.js"></script>
+    <script src="/assets/turf.min.js"></script>
+    <link href="/assets/mapbox-gl.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="mapContainer"></div>
+
+        <div class="details">
+            <h1 id="text">Please select a case!</h1>
+            <h3 id="address"></h3>
+        </div>
+
+        <div class="infoPlot">
+            <div class="chartContainer">
+                <canvas id="a"></canvas>
+            </div>
+        </div>
+        
+        <div class="ploty">
+            <div class="chartContainer">
+                <canvas id="b"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./charts.js"></script>
+<script src="./map.js"></script>
+
+</html>
